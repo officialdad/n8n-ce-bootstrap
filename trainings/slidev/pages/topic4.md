@@ -37,7 +37,7 @@ Complete automation: Parent emails → AI extracts details → Books meeting →
 <div v-click>
 
 ```mermaid {theme: 'dark'}
-graph TD
+graph LR
     A[Manual Trigger<br/>Parent Email] --> B[AI Agent 1<br/>Extract Details]
     B --> C[IF Node<br/>All Info Present?]
     C -->|Yes| D[Google Sheets<br/>Log Booking]
