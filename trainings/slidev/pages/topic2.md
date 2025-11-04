@@ -53,7 +53,7 @@ transition: slide-up
 
 <div v-click class="mt-8">
 
-```mermaid {theme: 'dark'}
+```mermaid {theme: 'dark', scale:0.85}
 graph LR
     A[N8N Workflow] --> B[Google API]
     B --> C[Sheets]
