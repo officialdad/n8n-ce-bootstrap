@@ -310,60 +310,6 @@ transition: fade-out
 
 ---
 transition: slide-up
----
-
-# What Makes This Powerful? <mdi-lightning-bolt />
-
-<div class="mt-6 grid grid-cols-2 gap-6">
-
-<div v-click class="p-6 bg-blue-500/20 rounded">
-<div class="text-4xl mb-3"><mdi-brain /></div>
-<div class="font-bold text-lg mb-3">AI Flexibility</div>
-<div class="text-sm opacity-90 space-y-2">
-<div>• Handles any email format</div>
-<div>• Understands casual language</div>
-<div>• Extracts structured data</div>
-<div>• Generates professional responses</div>
-</div>
-</div>
-
-<div v-click class="p-6 bg-green-500/20 rounded">
-<div class="text-4xl mb-3"><mdi-account-check /></div>
-<div class="font-bold text-lg mb-3">Smart Logic</div>
-<div class="text-sm opacity-90 space-y-2">
-<div>• Validates completeness</div>
-<div>• Routes intelligently</div>
-<div>• Handles errors gracefully</div>
-<div>• Maintains context</div>
-</div>
-</div>
-
-<div v-click class="p-6 bg-purple-500/20 rounded">
-<div class="text-4xl mb-3"><mdi-google /></div>
-<div class="font-bold text-lg mb-3">Integration Power</div>
-<div class="text-sm opacity-90 space-y-2">
-<div>• Logs to Google Sheets</div>
-<div>• Sends via Gmail</div>
-<div>• All automated</div>
-<div>• No manual work</div>
-</div>
-</div>
-
-<div v-click class="p-6 bg-orange-500/20 rounded">
-<div class="text-4xl mb-3"><mdi-clock-fast /></div>
-<div class="font-bold text-lg mb-3">Time Savings</div>
-<div class="text-sm opacity-90 space-y-2">
-<div>• Instant processing</div>
-<div>• Consistent quality</div>
-<div>• No missed details</div>
-<div>• 24/7 availability</div>
-</div>
-</div>
-
-</div>
-
----
-transition: fade-out
 layout: center
 class: text-center
 ---
@@ -748,18 +694,3 @@ layout: center
 
 </div>
 
----
-transition: fade-out
-layout: center
-class: text-center
----
-
-# You're Now Automation Heroes! <mdi-trophy />
-
-<div class="text-2xl mt-8 opacity-80">
-Thank you for your attention and enthusiasm
-</div>
-
-<div class="mt-12 text-xl opacity-60">
-Happy automating! 🚀
-</div>
