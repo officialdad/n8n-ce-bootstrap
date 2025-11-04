@@ -6,34 +6,32 @@ exec 2>&1
 
 echo "Starting n8n setup at $(date)"
 
-# Update package list (quick operation)
-apt-get update
+echo "Updating & installing packages"
 
-# Install required packages
+apt-get update >/dev/null
+
 apt-get install -y \
   apt-transport-https \
   ca-certificates \
   curl \
   software-properties-common \
-  gnupg
+  gnupg >/dev/null
 
-# Add Docker's official GPG key
+echo "Setting up docker"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-# Add Docker repository
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list >/dev/null
 
-# Update package list with Docker repository
-apt-get update
+apt-get update >/dev/null
 
 # Install Docker
-apt-get install -y docker-ce docker-ce-cli containerd.io
+apt-get install -y docker-ce docker-ce-cli containerd.io >/dev/null
 
 # Start Docker service
 systemctl start docker
 systemctl enable docker
 
-echo "Docker installed, starting n8n setup in background"
+echo "Docker active, starting n8n setup in background"
 
 # Run the rest in background to avoid blocking cloud-init
 cat <<'EOSCRIPT' >/root/setup-n8n.sh
