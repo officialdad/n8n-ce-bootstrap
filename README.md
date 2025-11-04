@@ -40,7 +40,7 @@ docker logs n8n
 ```bash
 cd terraform/do
 terraform init
-terraform apply -auto-approve -var="do_token=YOUR_DO_TOKEN"
+terraform apply -auto-approve -var="do_token=<your_do_token>"
 ```
 
 Use Digital Ocean Console to connect to your Droplet
@@ -50,7 +50,7 @@ Use Digital Ocean Console to connect to your Droplet
 ```bash
 cd terraform/gcp
 terraform init
-terraform apply -auto-approve
+terraform apply -auto-approve -var="project_id=<your_project_id>
 ```
 
 Use gcloud to connect to your instance and check logs:
