@@ -31,10 +31,6 @@ terraform apply -auto-approve
 
 Use AWS Session Manager to connect to your EC2
 
-```bash
-docker logs n8n
-```
-
 ### DigitalOcean
 
 ```bash
