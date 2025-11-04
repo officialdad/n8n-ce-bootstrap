@@ -28,8 +28,6 @@ terraform apply
 
 Use AWS Session Manager to connect to your EC2
 
-Access n8n via the tunnel URL shown in container logs:
-
 ```bash
 docker logs n8n
 ```
@@ -45,12 +43,6 @@ terraform apply -var="do_token=YOUR_DO_TOKEN"
 
 Use Digital Ocean Console to connect to your Droplet
 
-Access n8n via the tunnel URL shown in container logs:
-
-```bash
-docker logs n8n
-```
-
 ## Setup Details
 
 The deployment automatically:
@@ -61,6 +53,18 @@ The deployment automatically:
 4. Configures n8n with tunnel mode for external access
 
 Setup logs are available at `/var/log/n8n-setup.log` on the instance.
+
+You can follow the setup log by running this:
+
+```bash
+tail -f /var/log/n8n-setup.log"
+```
+
+And check the docker status with to get the tunnel url
+
+```bash
+docker logs n8n
+```
 
 ## Notes
 
