@@ -18,11 +18,11 @@ duration: 60min
 # N8N Training Workshop
 
 <div class="text-3xl mt-8">
-  🏫 Workflow Automation for Schools
+  <mdi-school-outline /> Workflow Automation for Schools
 </div>
 
 <div @click="$slidev.nav.next" class="mt-12 py-1 cursor-pointer" hover:bg="white op-10">
-  Press Space to start <carbon:arrow-right />
+  Press Space to start <mdi-arrow-right />
 </div>
 
 <!--
@@ -35,30 +35,30 @@ layout: center
 class: text-center
 ---
 
-# Training Overview 📚
+# Training Overview <mdi-book-multiple />
 
 <div class="grid grid-cols-2 gap-8 mt-12 text-left">
 
 <div v-click class="p-6 border border-main rounded">
-  <div class="text-4xl mb-3">1️⃣</div>
+  <div class="text-4xl mb-3"><mdi-numeric-1-circle /></div>
   <div class="text-xl font-bold mb-2">Hour 1</div>
   <div class="opacity-80">Foundations & First Workflow</div>
 </div>
 
 <div v-click class="p-6 border border-main rounded opacity-50">
-  <div class="text-4xl mb-3">2️⃣</div>
+  <div class="text-4xl mb-3"><mdi-numeric-2-circle /></div>
   <div class="text-xl font-bold mb-2">Hour 2</div>
   <div class="opacity-80">Advanced Triggers</div>
 </div>
 
 <div v-click class="p-6 border border-main rounded opacity-50">
-  <div class="text-4xl mb-3">3️⃣</div>
+  <div class="text-4xl mb-3"><mdi-numeric-3-circle /></div>
   <div class="text-xl font-bold mb-2">Hour 3</div>
   <div class="opacity-80">API Integrations</div>
 </div>
 
 <div v-click class="p-6 border border-main rounded opacity-50">
-  <div class="text-4xl mb-3">4️⃣</div>
+  <div class="text-4xl mb-3"><mdi-numeric-4-circle /></div>
   <div class="text-xl font-bold mb-2">Hour 4</div>
   <div class="opacity-80">Real-World Workflows</div>
 </div>
@@ -67,4 +67,8 @@ class: text-center
 
 ---
 src: ./pages/hour1.md
+---
+
+---
+src: ./pages/hour2.md
 ---
