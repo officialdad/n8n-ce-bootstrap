@@ -36,20 +36,24 @@ Complete automation: Parent emails → AI extracts details → Books meeting →
 
 <div v-click>
 
-```mermaid
+```mermaid {theme: 'dark'}
 graph TD
-    A[<mdi-gesture-tap /> Manual Trigger<br/>Parent Email] --> B[<mdi-brain /> AI Agent 1<br/>Extract Details]
-    B --> C[<mdi-call-split /> IF Node<br/>All Info Present?]
-    C -->|Yes| D[<mdi-file-table /> Google Sheets<br/>Log Booking]
-    C -->|No| E[<mdi-brain /> AI Agent 2<br/>Request Missing Info]
-    D --> F[<mdi-brain /> AI Agent 3<br/>Draft Confirmation]
-    F --> G[<mdi-email /> Gmail<br/>Send Email]
-    E --> H[<mdi-email /> Gmail<br/>Send Request]
+    A[Manual Trigger<br/>Parent Email] --> B[AI Agent 1<br/>Extract Details]
+    B --> C[IF Node<br/>All Info Present?]
+    C -->|Yes| D[Google Sheets<br/>Log Booking]
+    C -->|No| E[AI Agent 2<br/>Request Missing Info]
+    D --> F[AI Agent 3<br/>Draft Confirmation]
+    F --> G[Gmail<br/>Send Email]
+    E --> H[Gmail<br/>Send Request]
 
-    style A fill:#E8F5E9
-    style B fill:#E1F5FE
-    style C fill:#FFF3E0
-    style D fill:#F3E5F5
+    style A fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
+    style B fill:#581c87,stroke:#a78bfa,stroke-width:2px,color:#fff
+    style C fill:#92400e,stroke:#fbbf24,stroke-width:2px,color:#fff
+    style D fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style E fill:#581c87,stroke:#a78bfa,stroke-width:2px,color:#fff
+    style F fill:#581c87,stroke:#a78bfa,stroke-width:2px,color:#fff
+    style G fill:#92400e,stroke:#fbbf24,stroke-width:2px,color:#fff
+    style H fill:#92400e,stroke:#fbbf24,stroke-width:2px,color:#fff
 ```
 
 </div>

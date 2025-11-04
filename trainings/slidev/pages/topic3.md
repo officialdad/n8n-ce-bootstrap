@@ -228,15 +228,16 @@ AI reads parent email, summarizes it, identifies urgency & department
 
 <div v-click>
 
-```mermaid
+```mermaid {theme: 'dark'}
 graph LR
-    A[<mdi-gesture-tap /> Manual Trigger<br/>Paste Email] --> B[<mdi-brain /> AI Agent<br/>Analyze Email]
-    B --> C[<mdi-database /> Set Node<br/>Structure Data]
-    C --> D[<mdi-email /> Gmail<br/>Send Summary]
+    A[Manual Trigger<br/>Paste Email] --> B[AI Agent<br/>Analyze Email]
+    B --> C[Set Node<br/>Structure Data]
+    C --> D[Gmail<br/>Send Summary]
 
-    style A fill:#E8F5E9
-    style B fill:#E1F5FE
-    style D fill:#FFF3E0
+    style A fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
+    style B fill:#581c87,stroke:#a78bfa,stroke-width:2px,color:#fff
+    style C fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style D fill:#92400e,stroke:#fbbf24,stroke-width:2px,color:#fff
 ```
 
 </div>

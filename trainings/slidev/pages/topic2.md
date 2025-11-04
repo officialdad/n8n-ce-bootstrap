@@ -53,15 +53,20 @@ transition: slide-up
 
 <div v-click class="mt-8">
 
-```mermaid
+```mermaid {theme: 'dark'}
 graph LR
     A[N8N Workflow] --> B[Google API]
-    B --> C[<mdi-file-table /> Sheets]
-    B --> D[<mdi-email /> Gmail]
-    B --> E[<mdi-calendar /> Calendar]
-    B --> F[<mdi-google-drive /> Drive]
+    B --> C[Sheets]
+    B --> D[Gmail]
+    B --> E[Calendar]
+    B --> F[Drive]
 
-    style B fill:#4EC5D4,stroke:#146b8c,stroke-width:3px
+    style A fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style B fill:#065f46,stroke:#10b981,stroke-width:3px,color:#fff
+    style C fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style D fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style E fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style F fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
 ```
 
 </div>
@@ -189,16 +194,18 @@ Check attendance sheet daily and flag students with 3+ consecutive absences
 
 <div v-click>
 
-```mermaid
+```mermaid {theme: 'dark'}
 graph LR
-    A[<mdi-gesture-tap /> Manual Trigger] --> B[<mdi-file-table /> Read Sheets<br/>Attendance Data]
-    B --> C[<mdi-call-split /> IF Node<br/>Check Absences ≥ 3]
-    C -->|Yes| D[<mdi-alert /> Flag for<br/>Counselor]
-    C -->|No| E[<mdi-check /> All Good]
+    A[Manual Trigger] --> B[Read Sheets<br/>Attendance Data]
+    B --> C[IF Node<br/>Check Absences ≥ 3]
+    C -->|Yes| D[Flag for<br/>Counselor]
+    C -->|No| E[All Good]
 
-    style A fill:#E8F5E9
-    style C fill:#FFF3E0
-    style D fill:#FFEBEE
+    style A fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
+    style B fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style C fill:#92400e,stroke:#fbbf24,stroke-width:2px,color:#fff
+    style D fill:#7f1d1d,stroke:#f87171,stroke-width:2px,color:#fff
+    style E fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
 ```
 
 </div>

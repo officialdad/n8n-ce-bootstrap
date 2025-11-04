@@ -23,12 +23,16 @@ Workflow automation platform - connect apps without coding
 
 ```mermaid {theme: 'dark', scale: 0.8}
 graph LR
-    A[<mdi-email /> Email] --> B[N8N]
-    C[<mdi-google /> Google Sheets] --> B
-    D[<mdi-brain /> AI] --> B
-    B --> E[<mdi-check-circle /> Automated Actions]
+    A[Email] --> B[N8N]
+    C[Google Sheets] --> B
+    D[AI] --> B
+    B --> E[Automated Actions]
 
-    style B fill:#4EC5D4,stroke:#146b8c,stroke-width:3px
+    style A fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style B fill:#065f46,stroke:#10b981,stroke-width:3px,color:#fff
+    style C fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style D fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style E fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
 ```
 
 </div>
@@ -129,15 +133,18 @@ Automatically categorize parent emails and route to right departments
 
 ```mermaid {theme: 'dark', scale: 0.95}
 graph LR
-    A[<mdi-gesture-tap /> Manual Trigger] --> B[<mdi-database /> Set Node<br/>Create Email Data]
-    B --> C[<mdi-call-split /> IF Node<br/>Check Keywords]
-    C -->|Urgent| D[<mdi-alert /> Alert Principal]
-    C -->|Academic| E[<mdi-book /> To Teachers]
-    C -->|Facilities| F[<mdi-hammer-wrench /> To Maintenance]
+    A[Manual Trigger] --> B[Set Node<br/>Create Email Data]
+    B --> C[IF Node<br/>Check Keywords]
+    C -->|Urgent| D[Alert Principal]
+    C -->|Academic| E[To Teachers]
+    C -->|Facilities| F[To Maintenance]
 
-    style A fill:#E8F5E9
-    style C fill:#FFF3E0
-    style D fill:#FFEBEE
+    style A fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
+    style B fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style C fill:#92400e,stroke:#fbbf24,stroke-width:2px,color:#fff
+    style D fill:#7f1d1d,stroke:#f87171,stroke-width:2px,color:#fff
+    style E fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style F fill:#1e3a5f,stroke:#60a5fa,stroke-width:2px,color:#fff
 ```
 
 </div>
