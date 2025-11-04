@@ -15,10 +15,6 @@ transition: fade-out
 
 # What Are AI Agents? <mdi-robot-happy />
 
-<div v-click class="text-xl mt-8 mb-8">
-Think of them as smart assistants inside your workflows
-</div>
-
 <div class="grid grid-cols-2 gap-8">
 
 <div v-click class="p-6 bg-blue-500/20 rounded">
